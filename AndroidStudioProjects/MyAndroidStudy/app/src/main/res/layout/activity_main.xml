@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="개인 스터디(잊어버려도 보면 다시 생각나도록)"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.081" />
+
+
+        <Button
+            android:id="@+id/btnBasicHandler"
+            android:layout_width="287dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="36dp"
+            android:text=" 'handler' 의 기본적 사용"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.505"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <Button
+            android:id="@+id/btnBasicHandler2"
+            android:layout_width="287dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="12dp"
+            android:text=" 'handler/looper/queue' 의 관계"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.505"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnBasicHandler" />
+
+
+        <Button
+            android:id="@+id/btnBasicHandler3"
+            android:layout_width="287dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="64dp"
+            android:text="핸들러의 양방향통신"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.505"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnBasicHandler" />
+
+        <Button
+            android:id="@+id/btnThreadLifeCycle"
+            android:layout_width="287dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="32dp"
+            android:text="쓰레드의 라이프사이클 유지"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.505"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnBasicHandler3" />
+
+
+        <Button
+            android:id="@+id/btnThreadLifeCycle2"
+            android:layout_width="287dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="80dp"
+            android:text="쓰레드의 라이프사이클 유지(플래그먼트)"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.505"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnBasicHandler3" />
+
+
+        <Button
+            android:id="@+id/btnHandlerThread"
+            android:layout_width="287dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="156dp"
+            android:text="핸들러 쓰레드의 사용1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.505"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnBasicHandler3" />
+
+        <Button
+            android:id="@+id/btnHandlerThread2"
+            android:layout_width="287dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="196dp"
+            android:text="핸들러 쓰레드의 사용2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.505"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnBasicHandler3" />
+
+
+        <Button
+            android:id="@+id/btnAsyncTask"
+            android:layout_width="287dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="272dp"
+            android:text="asyncTask 실행하기"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.505"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnBasicHandler3" />
+
+        <!-- <ScrollView
+            android:id="@+id/scroll_view"
+            android:layout_width="384dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lay></ScrollView> -->
+
+    </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+</RelativeLayout>
